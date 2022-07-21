@@ -1,5 +1,5 @@
 .bottom-margin {
-    margin-bottom: 7em !important;
+    margin-bottom: 9em !important;
 }
 
 .product-desc {
@@ -19,8 +19,40 @@
     height: 7px !important;
 }
 
+.spacing-style {
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+}
+
+.product-border {
+    opacity: 0.7; 
+}
+
+.product-border:after {
+    content:"";
+    display: block;
+    width: 7em;
+    border-bottom: 2px solid #7FAAFF;
+}
+
 .carousel-indicators .active {
     background-color: #0D6EFD !important;
+}
+
+.content-spacing {
+    margin-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.purchase-btn-style {
+    border-radius: 20px !important;
+    padding: 9px 32px !important;
+    font-size: 13px !important;
+}
+
+.price-card {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    font-size: 14px;
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 800px) {
@@ -31,25 +63,67 @@
     .img-style {
         height: 452px;
     }
+
+    .content-spacing {
+        padding-bottom: 0 !important;
+    }
   }
+
+@media only screen and (max-width: 800px) {
+    .product-desc {
+        background-color: unset !important;
+        padding-left: 1.7rem !important;
+    }
+
+    .list-space {
+        padding-left: 1.7em;
+        margin-bottom: 5.5em !important;
+    }
+
+    .content-spacing {
+        margin-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .bottom-margin {
+        margin-bottom: 0 !important;
+    }
+}  
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
     .slide {
-        margin: 2.2rem;
+        margin: 1.9rem 2.3rem;
     }
 
     .img-style {
         height: 500px;
+    }
+
+    .price-card {
+        font-size: 15px;
     }
 }
 
 @media only screen and (max-width: 495px) {
 
     .slide {
-        margin: 1.2rem;
+        margin: 1.9rem 1.2rem;
     }
 
     .img-style {
         height: 300px;
+    }
+
+    .product-border {
+        font-size: 13px;
+    }
+
+    .spacing-style {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+    .product-desc {
+        padding-left: 0.7rem !important;
     }
 }
