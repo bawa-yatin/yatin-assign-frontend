@@ -1,0 +1,35 @@
+
+.main-navbar-text-size {
+    font-size: 14px !important;
+}
+
+.main-text-margin-style {
+    padding-left: 6.5rem !important;
+    padding-right: 6.5rem !important;
+}
+
+.link-space {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1190px) {
+  .link-space {
+    margin-right: 0;
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 1190px) and (min-width: 899px) {
+  .main-text-margin-style {
+    padding-left: 2.3rem !important;
+    padding-right: 2.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main-text-margin-style {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+}
+
