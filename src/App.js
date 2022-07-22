@@ -1,17 +1,17 @@
+import React from "react";
 import ContactNavbar from "./components/Contact Navbar/ContactNavbar";
-import MainNavbar from "./components/Main Navbar/MainNavbar";
-import ProductPurchase from "./components/Product Quantity Purchase/ProductPurchase";
-import ProductInfo from "./components/Product Info/ProductInfo";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <ContactNavbar />
-      <MainNavbar />
-      <ProductPurchase />
-      <ProductInfo />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ContactNavbar />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

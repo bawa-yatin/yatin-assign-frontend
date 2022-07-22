@@ -2,8 +2,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 import "./ProductInfo.css";
 import React from "react";
+import { API_URL } from "../../config/url";
 import slider_img_1 from "../../assets/images/carousel_img_1.png";
 import slider_img_2 from "../../assets/images/carousel_img_2.png";
 import slider_img_3 from "../../assets/images/carousel_img_3.png";
@@ -105,14 +107,21 @@ const ProductInfo = () => {
           <p className="d-sm-inline-block d-inline-block mt-sm-2 my-2">
             Price <b>&#8377;299.00</b>
           </p>
-          <Button
-            variant="primary"
-            size="sm"
-            className="purchase-btn-style fw-bold d-sm-inline-block"
-            style={{ float: "right" }}
+          <Form
+            action={`${API_URL}/api/stripe/create-checkout-session`}
+            method="POST"
+            style={{ display: "inline-block" }}
           >
-            Buy Now
-          </Button>
+            <Button
+              variant="primary"
+              size="sm"
+              className="purchase-btn-style fw-bold d-sm-inline-block"
+              style={{ float: "right" }}
+              type="submit"
+            >
+              Buy Now
+            </Button>
+          </Form>
         </div>
       </div>
     </React.Fragment>
