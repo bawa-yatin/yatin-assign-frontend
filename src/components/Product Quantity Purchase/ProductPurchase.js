@@ -50,6 +50,7 @@ const ProductPurchase = () => {
   const [messageImage, setMessageImage] = useState("");
   const [messageTitle, setMessageTitle] = useState("");
   const [messageDesc, setMessageDesc] = useState("");
+  const [email, setEmail] = useState("");
 
   useEffect(() => {
     const query = new URLSearchParams(window.location.search);
@@ -85,6 +86,21 @@ const ProductPurchase = () => {
               method="POST"
               style={{ display: "inline-block" }}
             >
+              <input
+                className="form-input"
+                id="quantity"
+                name="quantity"
+                type="number"
+                required
+              />
+              <input
+                className="form-input"
+                id="product_name"
+                name="product"
+                type="text"
+                value="New Apple AirPods (3rd Generation)"
+                hidden
+              />
               <Button
                 variant="primary"
                 size="sm"

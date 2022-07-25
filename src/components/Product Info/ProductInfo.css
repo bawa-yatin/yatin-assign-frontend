@@ -51,6 +51,10 @@
 }
 
 .price-card {
+    position: fixed !important;
+    bottom: 0;
+    width: 100%;
+    background: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     font-size: 14px;
 }
@@ -88,9 +92,17 @@
     .bottom-margin {
         margin-bottom: 0 !important;
     }
+
+    .slide {
+        margin-bottom: 0 !important;
+    }
 }  
 
 @media only screen and (max-width: 800px) and (min-width: 500px) {
+    .bottom-margin {
+        height: 1000px;
+    }
+
     .slide {
         margin: 1.9rem 2.3rem;
     }
@@ -105,6 +117,10 @@
 }
 
 @media only screen and (max-width: 495px) {
+
+    .bottom-margin {
+        height: 900px;
+    }
 
     .slide {
         margin: 1.9rem 1.2rem;

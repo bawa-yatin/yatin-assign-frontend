@@ -103,20 +103,34 @@ const ProductInfo = () => {
         </Col>
       </Row>
       <div className="d-xl-none d-lg-none d-md-block d-sm-block d-xs-block price-card">
-        <div className="mt-sm-3 mx-sm-4 py-3 mx-3">
+        <div className="mx-sm-4 py-3 mx-3">
           <p className="d-sm-inline-block d-inline-block mt-sm-2 my-2">
             Price <b>&#8377;299.00</b>
           </p>
           <Form
             action={`${API_URL}/api/stripe/create-checkout-session`}
             method="POST"
-            style={{ display: "inline-block" }}
+            style={{ display: "inline-block", float: "right" }}
           >
+            {/* <input
+                className="form-input"
+                id="quantity"
+                name="quantity"
+                type="number"
+                required
+              /> */}
+            <input
+              className="form-input"
+              id="product_name"
+              name="product"
+              type="text"
+              value="New Apple AirPods (3rd Generation)"
+              hidden
+            />
             <Button
               variant="primary"
               size="sm"
-              className="purchase-btn-style fw-bold d-sm-inline-block"
-              style={{ float: "right" }}
+              className="buy-btn-style fw-bold"
               type="submit"
             >
               Buy Now
