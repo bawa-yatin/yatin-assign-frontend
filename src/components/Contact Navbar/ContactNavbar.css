@@ -15,9 +15,25 @@
   }
 }
 
+@media only screen and (max-width: 900px) and (min-width: 500px) {
+  .navbar-style {
+    width: 768px !important;
+  }
+}
+
 @media only screen and (max-width: 900px) {
     .text-margin-style {
       padding-left: 1rem !important;
       padding-right: 1rem !important;
     }
+
+    .navbar-style {
+      position: fixed !important;
+      top: 0;
+      right: 1px;
+      left: 0;
+      z-index: 1030;
+      width: 425px;
+    }
   }
+  

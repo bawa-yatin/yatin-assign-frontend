@@ -9,7 +9,7 @@ import React from "react";
 const ContactNavbar = () => {
   return (
     <React.Fragment>
-      <Navbar bg="dark" variant="dark" className="py-1">
+      <Navbar bg="dark" variant="dark" className="py-1 navbar-style">
         <Container className="text-margin-style">
           <Navbar.Brand className="navbar-text-size fw-bold">
             <Navbar.Text>Mon-Thu: </Navbar.Text>

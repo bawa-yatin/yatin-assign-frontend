@@ -6,10 +6,19 @@ import "./MainNavbar.css";
 
 const MainNavbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" className="main-navbar-text-size mt-2">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      className="main-navbar-text-size mt-xl-2 mt-lg-2"
+    >
       <Container className="main-text-margin-style">
         <Navbar.Brand href="#">
-          <img src={icon} height="32" alt="Website Icon" />
+          <img
+            src={icon}
+            height="32"
+            alt="Website Icon"
+            className="icon-style"
+          />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

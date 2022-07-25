@@ -86,13 +86,13 @@ const ProductPurchase = () => {
               method="POST"
               style={{ display: "inline-block" }}
             >
-              <input
+              {/* <input
                 className="form-input"
                 id="quantity"
                 name="quantity"
                 type="number"
                 required
-              />
+              /> */}
               <input
                 className="form-input"
                 id="product_name"
@@ -113,7 +113,7 @@ const ProductPurchase = () => {
           </Col>
         </Row>
       </Container>
-      <hr className="mb-0 divider-style" />
+      <hr className="mt-xl-4 mt-lg-4 mb-0 divider-style" />
 
       {messageImage && messageTitle && messageDesc ? (
         <Message

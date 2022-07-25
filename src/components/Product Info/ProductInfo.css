@@ -114,6 +114,10 @@
     .price-card {
         font-size: 15px;
     }
+
+    .slider {
+        margin-top: 7.5rem !important;
+    }
 }
 
 @media only screen and (max-width: 495px) {
@@ -141,5 +145,9 @@
 
     .product-desc {
         padding-left: 0.7rem !important;
+    }
+
+    .slider {
+        margin-top: 6.5rem !important;
     }
 }
