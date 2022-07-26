@@ -15,12 +15,6 @@ const MainNavbar = () => {
     >
       <Container className="main-text-margin-style">
         <Navbar.Brand href="#" className="pt-md-0">
-          {/* <img
-            src={icon}
-            height="32"
-            alt="Website Icon"
-            className="icon-style my-1"
-          /> */}
           <GiBoxUnpacking className="icon-style" style={style} />
         </Navbar.Brand>
 

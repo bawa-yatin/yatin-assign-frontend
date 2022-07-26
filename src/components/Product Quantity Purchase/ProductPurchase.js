@@ -75,24 +75,28 @@ const ProductPurchase = () => {
     <React.Fragment>
       <Container className="spacing-style">
         <Row className="product-text-margin-style">
-          <Col xl={8} lg={8} sm={6} className="fw-bold about-product-border">
+          <Col xl={7} lg={7} sm={6} className="fw-bold about-product-border">
             About Product
           </Col>
 
-          <Col xl={4} lg={4} sm={6} style={{ textAlign: "right" }}>
+          <Col xl={5} lg={5} sm={6} style={{ textAlign: "right" }}>
             Price <b>&#8377;299.00</b>
             <Form
               action={`${API_URL}/api/stripe/create-checkout-session`}
               method="POST"
               style={{ display: "inline-block" }}
+              className="form-styles"
             >
-              {/* <input
-                className="form-input"
+              <input
+                className="form-input quantity-style"
                 id="quantity"
                 name="quantity"
                 type="number"
+                min="1"
+                max="10"
+                defaultValue="1"
                 required
-              /> */}
+              />
               <input
                 className="form-input"
                 id="product_name"

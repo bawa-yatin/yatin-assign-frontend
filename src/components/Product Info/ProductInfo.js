@@ -110,7 +110,7 @@ const ProductInfo = () => {
       <div className="d-xl-none d-lg-none d-md-block d-sm-block d-xs-block price-card">
         <div className="mx-sm-4 pt-3 pb-2 mx-3">
           <p
-            className="d-sm-inline-block d-inline-block mt-sm-2"
+            className="d-sm-inline-block d-inline-block"
             style={{ marginTop: "0.8rem" }}
           >
             Price <b>&#8377;299.00</b>
@@ -120,13 +120,16 @@ const ProductInfo = () => {
             method="POST"
             style={{ display: "inline-block", float: "right" }}
           >
-            {/* <input
-              className="form-input"
+            <input
+              className="form-input quantity-style"
               id="quantity"
               name="quantity"
               type="number"
+              min="1"
+              max="10"
+              defaultValue="1"
               required
-            /> */}
+            />
             <input
               className="form-input"
               id="product_name"

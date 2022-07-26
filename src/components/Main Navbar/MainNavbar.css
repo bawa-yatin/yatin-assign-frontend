@@ -96,6 +96,13 @@
   }
 
   .icon-style {
-    height: 23px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    font-size: 28px !important;
+  }
+
+  .navbar-brand {
+    padding-top: 0 !important;
   }
 }
