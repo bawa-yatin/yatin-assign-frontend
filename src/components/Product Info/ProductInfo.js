@@ -10,6 +10,7 @@ import slider_img_1 from "../../assets/images/carousel_img_1.png";
 import slider_img_2 from "../../assets/images/carousel_img_2.png";
 import slider_img_3 from "../../assets/images/carousel_img_3.png";
 import slider_img_4 from "../../assets/images/carousel_img_4.png";
+import { Container } from "react-bootstrap";
 
 const ProductInfo = () => {
   return (
@@ -18,12 +19,12 @@ const ProductInfo = () => {
         <Col
           xl={{ span: 7, order: 1 }}
           lg={{ span: 6, order: 1 }}
-          md={{ span: 12, order: 2 }}
+          md={{ span: 6, order: 1 }}
           sm={{ span: 12, order: 2 }}
           xs={{ span: 12, order: 2 }}
           className="product-desc"
         >
-          <div className="mx-2 mx-xl-0 content-spacing">
+          <div className="mx-lg-2 mx-md-2 mx-xl-0 content-spacing">
             <p className="fw-bold product-border d-xl-none d-lg-none d-md-block d-sm-block d-xs-block">
               About Product
             </p>
@@ -33,8 +34,10 @@ const ProductInfo = () => {
             >
               APPLE PRODUCTS
             </span>
-            <h4 className="mt-4 mb-3">New Apple AirPods (3rd Generation)</h4>
-            <p style={{ fontSize: "14px" }}>It's magic, remastered!</p>
+            <h4 className="mb-3 product-title">
+              New Apple AirPods (3rd Generation)
+            </h4>
+            <p style={{ fontSize: "13px" }}>It's magic, remastered!</p>
             <ul className="list-space">
               <li>
                 Spatial audio with dynamic head tracking places sound all around
@@ -60,51 +63,56 @@ const ProductInfo = () => {
         <Col
           xl={{ span: 5, order: 2 }}
           lg={{ span: 6, order: 2 }}
-          md={{ span: 12, order: 1 }}
+          md={{ span: 6, order: 2 }}
           sm={{ span: 12, order: 1 }}
           xs={{ span: 12, order: 1 }}
-          className="px-0 img slider"
+          className="img slider"
         >
-          <Carousel controls={false} interval={1500}>
-            <Carousel.Item>
-              <img
-                className="d-block w-100 img-style"
-                src={slider_img_1}
-                alt="First Image"
-                height="470"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100 img-style"
-                src={slider_img_2}
-                alt="Second Image"
-                height="470"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100 img-style"
-                src={slider_img_3}
-                alt="Third Image"
-                height="470"
-              />
-            </Carousel.Item>
+          <Container className="space-style">
+            <Carousel controls={false} interval={1500}>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 img-style"
+                  src={slider_img_1}
+                  alt="First Image"
+                  height="385"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 img-style"
+                  src={slider_img_2}
+                  alt="Second Image"
+                  height="385"
+                />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 img-style"
+                  src={slider_img_3}
+                  alt="Third Image"
+                  height="385"
+                />
+              </Carousel.Item>
 
-            <Carousel.Item>
-              <img
-                className="d-block w-100 img-style"
-                src={slider_img_4}
-                alt="Fourth Image"
-                height="470"
-              />
-            </Carousel.Item>
-          </Carousel>
+              <Carousel.Item>
+                <img
+                  className="d-block w-100 img-style"
+                  src={slider_img_4}
+                  alt="Fourth Image"
+                  height="385"
+                />
+              </Carousel.Item>
+            </Carousel>
+          </Container>
         </Col>
       </Row>
       <div className="d-xl-none d-lg-none d-md-block d-sm-block d-xs-block price-card">
-        <div className="mx-sm-4 py-3 mx-3">
-          <p className="d-sm-inline-block d-inline-block mt-sm-2 my-2">
+        <div className="mx-sm-4 pt-3 pb-2 mx-3">
+          <p
+            className="d-sm-inline-block d-inline-block mt-sm-2"
+            style={{ marginTop: "0.8rem" }}
+          >
             Price <b>&#8377;299.00</b>
           </p>
           <Form
@@ -113,12 +121,12 @@ const ProductInfo = () => {
             style={{ display: "inline-block", float: "right" }}
           >
             {/* <input
-                className="form-input"
-                id="quantity"
-                name="quantity"
-                type="number"
-                required
-              /> */}
+              className="form-input"
+              id="quantity"
+              name="quantity"
+              type="number"
+              required
+            /> */}
             <input
               className="form-input"
               id="product_name"
@@ -130,7 +138,7 @@ const ProductInfo = () => {
             <Button
               variant="primary"
               size="sm"
-              className="buy-btn-style fw-bold"
+              className="buy-btn-style fw-bold mb-3"
               type="submit"
             >
               Buy Now

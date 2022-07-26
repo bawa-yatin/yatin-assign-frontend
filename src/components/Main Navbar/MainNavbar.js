@@ -2,23 +2,26 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import icon from "../../assets/images/website_icon.png";
+import { GiBoxUnpacking } from "react-icons/gi";
 import "./MainNavbar.css";
 
 const MainNavbar = () => {
+  const style = { color: "blue", fontSize: "1.8em" };
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="main-navbar-text-size mt-xl-2 mt-lg-2"
+      className="main-navbar-text-size mt-xl-2 mt-lg-2 pt-md-2"
     >
       <Container className="main-text-margin-style">
-        <Navbar.Brand href="#">
-          <img
+        <Navbar.Brand href="#" className="pt-md-0">
+          {/* <img
             src={icon}
             height="32"
             alt="Website Icon"
-            className="icon-style"
-          />
+            className="icon-style my-1"
+          /> */}
+          <GiBoxUnpacking className="icon-style" style={style} />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

@@ -113,7 +113,7 @@ const ProductPurchase = () => {
           </Col>
         </Row>
       </Container>
-      <hr className="mt-xl-4 mt-lg-4 mb-0 divider-style" />
+      <hr className="mt-xl-4 mt-lg-4 mb-xl-0 mb-lg-0 divider-style" />
 
       {messageImage && messageTitle && messageDesc ? (
         <Message

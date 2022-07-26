@@ -24,6 +24,7 @@ const ContactNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
       <MainNavbar />
       <ProductPurchase />
       <ProductInfo />
