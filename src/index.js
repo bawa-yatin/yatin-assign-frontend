@@ -1,3 +1,5 @@
+// Main entry point of our app where the root component is getting rendered
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";

@@ -1,3 +1,5 @@
+// Main Component file of Contact Bar(On Top with Black Background)
+
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import MainNavbar from "../Main Navbar/MainNavbar";
@@ -25,6 +27,8 @@ const ContactNavbar = () => {
         </Container>
       </Navbar>
 
+      {/* Rendering other child components of the main page to be placed
+      under the Contact Bar */}
       <MainNavbar />
       <ProductPurchase />
       <ProductInfo />

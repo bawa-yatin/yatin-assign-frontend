@@ -1,3 +1,5 @@
+/* CSS File of Main Navbar(just below Contact Bar)  */
+
 .icon-style {
   padding-left: 0.2rem;
 }
@@ -29,6 +31,9 @@
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+
+/* Media Queries for handling responsivness of components on different
+screen sizes */
 
 @media only screen and (max-width: 1190px) {
   .link-space {

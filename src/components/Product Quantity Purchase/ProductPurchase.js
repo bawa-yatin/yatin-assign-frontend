@@ -1,3 +1,6 @@
+/* Main Component File of About Product and Buy Now Component
+(Below main Navbar)  */
+
 import React, { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -11,8 +14,10 @@ import cross_icon from "../../assets/images/cross_icon.jpg";
 import "./ProductPurchase.css";
 import { API_URL } from "../../config/url";
 
+// Stateful Message Component responsible for displaying success/
+// cancellation popup(after successful or incomplete payment)
 const Message = ({ messageImage, messageTitle, messageDesc }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true); // stateful variable for displaying popup
   const handleClose = () => setShow(false);
 
   return (
@@ -47,11 +52,14 @@ const Message = ({ messageImage, messageTitle, messageDesc }) => {
 };
 
 const ProductPurchase = () => {
+  // Stateful variables for setting popup image, title and description
+  // on basis of response returned from backend api
   const [messageImage, setMessageImage] = useState("");
   const [messageTitle, setMessageTitle] = useState("");
   const [messageDesc, setMessageDesc] = useState("");
 
   useEffect(() => {
+    // variable for holding query parameters present in URL
     const query = new URLSearchParams(window.location.search);
 
     if (query.get("success")) {
@@ -120,6 +128,7 @@ const ProductPurchase = () => {
       </Container>
       <hr className="mt-xl-4 mt-lg-4 mb-xl-0 mb-lg-0 divider-style" />
 
+      {/* Condition for rendering 'Message' component on basis of data present */}
       {messageImage && messageTitle && messageDesc ? (
         <Message
           messageImage={messageImage}

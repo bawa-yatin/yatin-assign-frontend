@@ -1,12 +1,15 @@
+/* Main Component File of Main Navbar(just below Contact Bar)  */
+
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import icon from "../../assets/images/website_icon.png";
 import { GiBoxUnpacking } from "react-icons/gi";
 import "./MainNavbar.css";
 
 const MainNavbar = () => {
+  // CSS Styles for Navbar Icon
   const style = { color: "blue", fontSize: "1.8em" };
+
   return (
     <Navbar
       collapseOnSelect

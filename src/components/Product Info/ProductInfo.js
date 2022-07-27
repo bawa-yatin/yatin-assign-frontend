@@ -1,8 +1,12 @@
+/* Main Component File of Product Information and Images Component
+(Below About and Buy Now Component)  */
+
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { Container } from "react-bootstrap";
 import "./ProductInfo.css";
 import React from "react";
 import { API_URL } from "../../config/url";
@@ -10,7 +14,6 @@ import slider_img_1 from "../../assets/images/carousel_img_1.png";
 import slider_img_2 from "../../assets/images/carousel_img_2.png";
 import slider_img_3 from "../../assets/images/carousel_img_3.png";
 import slider_img_4 from "../../assets/images/carousel_img_4.png";
-import { Container } from "react-bootstrap";
 
 const ProductInfo = () => {
   return (

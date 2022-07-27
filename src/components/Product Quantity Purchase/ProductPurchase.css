@@ -1,3 +1,6 @@
+/* CSS File of About Product and Buy Now Component
+(Below main Navbar)  */
+
 .product-text-margin-style {
     padding-left: 11rem !important;
     padding-right: 6.5rem !important;
@@ -75,6 +78,9 @@
 .quantity-style:focus-visible {
   outline: none;
 }
+
+/* Media Queries for handling responsivness of components on different
+screen sizes */
 
 @media only screen and (max-width: 1300px) and (min-width: 1100px) {
   .product-text-margin-style {
