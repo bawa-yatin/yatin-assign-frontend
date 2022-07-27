@@ -69,7 +69,7 @@ const ProductInfo = () => {
           className="img slider"
         >
           <Container className="space-style">
-            <Carousel controls={false} interval={1500}>
+            <Carousel controls={false} interval={500} fade>
               <Carousel.Item>
                 <img
                   className="d-block w-100 img-style"

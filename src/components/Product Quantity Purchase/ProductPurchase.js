@@ -50,7 +50,6 @@ const ProductPurchase = () => {
   const [messageImage, setMessageImage] = useState("");
   const [messageTitle, setMessageTitle] = useState("");
   const [messageDesc, setMessageDesc] = useState("");
-  const [email, setEmail] = useState("");
 
   useEffect(() => {
     const query = new URLSearchParams(window.location.search);
@@ -67,7 +66,7 @@ const ProductPurchase = () => {
       setMessageImage(cross_icon);
       setMessageTitle("Purchase Cancelled");
       setMessageDesc(
-        "Order canceled -- continue to shop around and checkout when you're ready."
+        "Order cancelled -- continue to shop around and checkout when you're ready."
       );
     }
   }, []);
@@ -81,6 +80,8 @@ const ProductPurchase = () => {
 
           <Col xl={5} lg={5} sm={6} style={{ textAlign: "right" }}>
             Price <b>&#8377;299.00</b>
+            {/* After quantity is selected customer is redirected
+            to stripe checkout form*/}
             <Form
               action={`${API_URL}/api/stripe/create-checkout-session`}
               method="POST"
