@@ -11,7 +11,7 @@ const MainNavbar = () => {
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="main-navbar-text-size mt-xl-3 mt-lg-3 pt-md-2"
+      className="main-navbar-text-size mt-xl-2 mt-lg-2 pt-md-2"
     >
       <Container className="main-text-margin-style">
         <Navbar.Brand href="#" className="pt-xl-2 pt-lg-2 pt-sm-0 navbar-brand">

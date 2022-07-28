@@ -102,7 +102,7 @@ const ProductPurchase = () => {
                 name="quantity"
                 type="number"
                 min="1"
-                max="10"
+                max="3"
                 defaultValue="1"
                 required
               />
