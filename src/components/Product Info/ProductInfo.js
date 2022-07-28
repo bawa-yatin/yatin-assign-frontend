@@ -16,6 +16,17 @@ import slider_img_3 from "../../assets/images/carousel_img_3.png";
 import slider_img_4 from "../../assets/images/carousel_img_4.png";
 
 const ProductInfo = () => {
+  const product_feature_list = [
+    "Spatial audio with dynamic head tracking places sound all around you",
+    "Adaptive EQ automatically tunes music to your ears",
+    "All-new contoured design",
+    "Force sensor lets you easily control your entertainment, answer or end calls, and more",
+    "Sweat and water resistant",
+    "Up to 6 hours of listening time with one charge",
+    "Up to 30 hours of total listening time with the MagSafe Charging Case",
+    "Quick access to Siri by saying 'Hey Siri'",
+  ];
+
   return (
     <React.Fragment>
       <Row className="mx-0 bottom-margin">
@@ -42,23 +53,9 @@ const ProductInfo = () => {
             </h4>
             <p style={{ fontSize: "13px" }}>It's magic, remastered!</p>
             <ul className="list-space">
-              <li>
-                Spatial audio with dynamic head tracking places sound all around
-                you
-              </li>
-              <li>Adaptive EQ automatically tunes music to your ears</li>
-              <li>All-new contoured design</li>
-              <li>
-                Force sensor lets you easily control your entertainment, answer
-                or end calls, and more
-              </li>
-              <li>Sweat and water resistant</li>
-              <li>Up to 6 hours of listening time with one charge</li>
-              <li>
-                Up to 30 hours of total listening time with the MagSafe Charging
-                Case
-              </li>
-              <li>Quick access to Siri by saying "Hey Siri"</li>
+              {product_feature_list.map((feature) => (
+                <li>{feature}</li>
+              ))}
             </ul>
           </div>
         </Col>
