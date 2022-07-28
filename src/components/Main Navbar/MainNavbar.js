@@ -3,22 +3,24 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { GiBoxUnpacking } from "react-icons/gi";
 import "./MainNavbar.css";
+import website_icon from "../../assets/images/website_icon.png";
 
 const MainNavbar = () => {
-  // CSS Styles for Navbar Icon
-  const style = { color: "blue", fontSize: "1.8em" };
-
   return (
     <Navbar
       collapseOnSelect
       expand="lg"
-      className="main-navbar-text-size mt-xl-2 mt-lg-2 pt-md-2"
+      className="main-navbar-text-size mt-xl-3 mt-lg-3 pt-md-2"
     >
       <Container className="main-text-margin-style">
-        <Navbar.Brand href="#" className="pt-md-0">
-          <GiBoxUnpacking className="icon-style" style={style} />
+        <Navbar.Brand href="#" className="pt-xl-2 pt-lg-2 pt-sm-0 navbar-brand">
+          <img
+            src={website_icon}
+            width="35"
+            height="35"
+            className="d-inline-block align-top website-icon"
+          />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -28,7 +30,7 @@ const MainNavbar = () => {
             <Nav.Link
               href="#"
               className="text-black link-space"
-              style={{ marginLeft: "20px" }}
+              style={{ marginLeft: "35px" }}
             >
               Laptops
             </Nav.Link>

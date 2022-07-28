@@ -10,13 +10,13 @@
 }
 
 .product-desc {
-    background-color: #eff4f8;
-    padding-left: 15.1rem !important;
+    background-color: #F5F7FF;
+    padding-left: 16.1rem !important;
     padding-right: 6rem !important;
 }
 
 .list-space {
-    padding-left: 1.5em;
+    padding-left: 1em;
     font-weight: 300;
     font-size: 14px;
 }
@@ -72,7 +72,7 @@
 }
 
 .img-style {
-    margin-top: 3.8rem !important;
+    margin-top: 3.2rem !important;
 }
 
 .carousel-indicators {
@@ -95,9 +95,9 @@ screen sizes */
     }
 
     .product-desc {
-        padding-left: 12.9rem !important;
-        padding-right: 7rem !important;
-        padding-bottom: 6.3rem !important;
+        padding-left: 13.7rem !important;
+        padding-right: 6rem !important;
+        padding-bottom: 7.5rem !important;
     }
 
     .img-style {
@@ -144,7 +144,7 @@ screen sizes */
     }
 
     .list-space {
-        padding-left: 1.5em;
+        padding-left: 1.7em;
     }
 
     .content-spacing {
@@ -252,7 +252,7 @@ screen sizes */
     }
 
     .content-spacing {
-        height: 500px;
+        height: 540px;
         margin-top: 3rem !important;
     }  
 }

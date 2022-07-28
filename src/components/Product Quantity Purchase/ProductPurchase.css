@@ -2,9 +2,9 @@
 (Below main Navbar)  */
 
 .product-text-margin-style {
-    padding-left: 11rem !important;
+    padding-left: 11.9rem !important;
     padding-right: 6.5rem !important;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .about-product-border {
@@ -17,13 +17,13 @@
   content:"";
   display: block;
   width: 7em;
-  border-bottom: 2px solid #7FAAFF;
+  border-bottom: 2px solid #0156FF;
 }
 
 .buy-btn-style {
   margin-left: 17px;
   border-radius: 20px !important;
-  padding: 9px 32px !important;
+  padding: 10px 37px !important;
   font-size: 12px !important;
 }
 
@@ -61,10 +61,10 @@
 
 .quantity-style {
   margin-left: 15px;
-  background-color: #eff4f8;
+  background-color: #F5F7FF;
   border: none;
   width: 3.5rem;
-  padding: 7px 7px 8px 12px !important;
+  padding: 10px 8px 10px 15px !important;
   border-radius: 5px;
 }
 
@@ -84,7 +84,7 @@ screen sizes */
 
 @media only screen and (max-width: 1300px) and (min-width: 1100px) {
   .product-text-margin-style {
-    padding-left: 8rem !important;
+    padding-left: 8.9rem !important;
     padding-right: 2.8rem !important;
   }
 }

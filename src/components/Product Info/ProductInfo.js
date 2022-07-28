@@ -48,7 +48,7 @@ const ProductInfo = () => {
             >
               APPLE PRODUCTS
             </span>
-            <h4 className="mb-3 product-title">
+            <h4 className="mb-3 product-title fw-bold">
               New Apple AirPods (3rd Generation)
             </h4>
             <p style={{ fontSize: "13px" }}>It's magic, remastered!</p>
