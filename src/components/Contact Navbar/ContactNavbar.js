@@ -2,9 +2,6 @@
 
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import MainNavbar from "../Main Navbar/MainNavbar";
-import ProductPurchase from "../Product Quantity Purchase/ProductPurchase";
-import ProductInfo from "../Product Info/ProductInfo";
 import "./ContactNavbar.css";
 import React from "react";
 
@@ -26,12 +23,6 @@ const ContactNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      {/* Rendering other child components of the main page to be placed
-      under the Contact Bar */}
-      <MainNavbar />
-      <ProductPurchase />
-      <ProductInfo />
     </React.Fragment>
   );
 };

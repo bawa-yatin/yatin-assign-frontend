@@ -2,7 +2,7 @@
 // by routing of components
 
 import React from "react";
-import ContactNavbar from "./components/Contact Navbar/ContactNavbar";
+import HomePage from "./components/Home/HomePage";
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ContactNavbar />} />
+          <Route path="/" element={<HomePage />} />
           <Route path={"*"} element={<Navigate replace to={"/"} />} />
         </Routes>
       </BrowserRouter>
